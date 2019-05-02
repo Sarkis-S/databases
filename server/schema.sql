@@ -7,7 +7,7 @@ CREATE TABLE messages (
 );
 
 /* Create other tables and define schemas for them here! */
-
+CREATE TABLE `persons` ( `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(15) NOT NULL, `age` int(11) DEFAULT NULL, PRIMARY KEY (`id`) );
 
 
 
