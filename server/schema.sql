@@ -4,10 +4,19 @@ USE chat;
 
 CREATE TABLE messages (
   /* Describe your table here.*/
+  id int NOT NULL AUTO_INCREMENT,
+  userid int NOT NULL,
+  text varchar(200) NOT NULL,
+  roomname varchar(20),
+  PRIMARY KEY (ID)
 );
 
 /* Create other tables and define schemas for them here! */
-CREATE TABLE `persons` ( `id` int(11) NOT NULL AUTO_INCREMENT,   `name` varchar(15) NOT NULL, `age` int(11) DEFAULT NULL, PRIMARY KEY (`id`) );
+CREATE TABLE users (
+  id int NOT NULL AUTO_INCREMENT,
+  username  varchar(40) NOT NULL,
+  PRIMARY KEY(ID)
+);
 
 
 
